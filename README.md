@@ -1,2 +1,2 @@
 # OOP-Projects
-OOP projects , java
+OOP projects using java(netbeans)
