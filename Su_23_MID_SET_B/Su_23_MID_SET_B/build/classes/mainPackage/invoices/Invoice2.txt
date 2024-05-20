@@ -1,0 +1,11 @@
+Invoice generated on: 2023-08-02 16:14:14
+
+Bill Summary
+
+Salmon fish 1kg (Quantity: 5)
+Unit Price: 300.0
+Gross Total: 1575.0
+
+Total Payable: 1575.0 BDT
+
+Total Payable: 1575.0 BDT

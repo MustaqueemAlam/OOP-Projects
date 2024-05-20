@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlapplicationpkg.TestTableViewSceneController">
+   <children>
+      <ComboBox layoutX="57.0" layoutY="37.0" prefWidth="150.0" />
+      <TableView fx:id="tv" layoutX="100.0" layoutY="100.0" prefHeight="200.0" prefWidth="348.0">
+        <columns>
+          <TableColumn fx:id="tc1" prefWidth="189.0" text="ID" />
+          <TableColumn fx:id="tc2" prefWidth="98.0" text="Name" />
+            <TableColumn fx:id="tc3" prefWidth="48.0" text="Cgpa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

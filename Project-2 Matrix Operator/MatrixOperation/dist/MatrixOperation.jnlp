@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MatrixOperation.jnlp">
+  <information>
+    <title>MatrixOperation</title>
+    <vendor>Jasper</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MatrixOperation.jar" size="6663" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainpkg.Launcher"  name="MatrixOperation" />
+  <update check="always"/>
+</jnlp>

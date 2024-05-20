@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="435.0" prefWidth="322.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CalculateScController">
+    <TextArea fx:id="inputTextArea" editable="false" layoutX="17.0" layoutY="62.0" prefHeight="51.0" prefWidth="288.0" style="-fx-background-color: aqua;">
+      <font>
+         <Font name="Constantia Bold" size="18.0" />
+      </font></TextArea>
+    <Button layoutX="18.0" layoutY="135.0" onAction="#SevenButtonClick" prefWidth="46.0" text="7" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="98.0" layoutY="135.0" onAction="#EightButtonClick" text="8" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="178.0" layoutY="135.0" onAction="#NineButtonClick" text="9" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="258.0" layoutY="135.0" onAction="#DivideButtonClick" prefHeight="17.0" prefWidth="43.0" text="/" textFill="#1b1fff">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="18.0" layoutY="205.0" onAction="#FourButtonClick" text="4" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="98.0" layoutY="205.0" onAction="#FiveButtonClick" text="5" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="178.0" layoutY="205.0" onAction="#SixButtonClick" text="6" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="258.0" layoutY="205.0" onAction="#MultiplyButtonClick" text="*" textFill="#1b1fff">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="18.0" layoutY="275.0" onAction="#OneButtonClick" text="1" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="98.0" layoutY="275.0" onAction="#TwoButtonClick" text="2" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="178.0" layoutY="275.0" onAction="#ThreeButtonClick" text="3" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="258.0" layoutY="275.0" onAction="#SubtractButtonClick" text="-" textFill="#1b1fff">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="18.0" layoutY="345.0" onAction="#ZeroButtonClick" text="0" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="98.0" layoutY="345.0" onAction="#clearInput" text="C" textFill="#8d0063">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="178.0" layoutY="345.0" onAction="#calculateResult" text="=" textFill="#1519ff">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+    <Button layoutX="255.0" layoutY="345.0" onAction="#AddButtonClick" prefHeight="35.0" prefWidth="30.0" text="+" textFill="#1b1fff">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Button>
+   <Label layoutX="19.0" layoutY="20.0" prefHeight="17.0" prefWidth="90.0" text="CASIO" textFill="#1ef0ff">
+      <font>
+         <Font name="Sitka Heading Bold Italic" size="29.0" />
+      </font>
+   </Label>
+   <Line endX="-21.0" layoutX="121.0" layoutY="52.0" startX="-100.0" stroke="WHITE" />
+   <Label layoutX="7.0" layoutY="413.0" prefHeight="17.0" prefWidth="190.0" text="Designed by : Mustaqueem Alam " textFill="#00c3ff" />
+</AnchorPane>

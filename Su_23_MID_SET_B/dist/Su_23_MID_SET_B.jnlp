@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Su_23_MID_SET_B.jnlp">
+  <information>
+    <title>Su_23_MID_SET_B</title>
+    <vendor>tabri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Su_23_MID_SET_B.jar" size="13480" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainPackage.MainApplication"  name="Su_23_MID_SET_B" />
+  <update check="always"/>
+</jnlp>

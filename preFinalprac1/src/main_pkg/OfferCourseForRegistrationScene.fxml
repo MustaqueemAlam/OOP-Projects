@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.event.ActionEvent?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.OfferCourseForRegistrationController">
+    <children>
+        <Label text="Offer Course for Registration" layoutX="110" layoutY="20" />
+        <Label text="Course ID:" layoutX="20" layoutY="60" />
+        <ComboBox fx:id="courseIdComboBox" layoutX="150" layoutY="55" />
+        <Label text="Faculty ID:" layoutX="20" layoutY="100" />
+        <ComboBox fx:id="facultyIdComboBox" layoutX="150" layoutY="95" />
+        <Label text="Section:" layoutX="20" layoutY="140" />
+        <TextField fx:id="secTextField" layoutX="150" layoutY="135" />
+        <Label text="Semester:" layoutX="20" layoutY="180" />
+        <TextField fx:id="semesterTextField" layoutX="150" layoutY="175" />
+        <Label text="Days:" layoutX="20" layoutY="220" />
+        <TextField fx:id="daysTextField" layoutX="150" layoutY="215" />
+        <Label text="Room:" layoutX="20" layoutY="260" />
+        <TextField fx:id="roomTextField" layoutX="150" layoutY="255" />
+        <Label text="Time:" layoutX="20" layoutY="300" />
+        <TextField fx:id="timeTextField" layoutX="150" layoutY="295" />
+        <Label text="Capacity:" layoutX="20" layoutY="340" />
+        <TextField fx:id="capacityTextField" layoutX="150" layoutY="335" />
+        <Label text="Enrolled:" layoutX="20" layoutY="380" />
+        <TextField fx:id="enrolledTextField" layoutX="150" layoutY="375" />
+        <Button text="Add Offered Course" layoutX="150" layoutY="420" onAction="#addNewOfferedCourse" />
+    </children>
+</AnchorPane>

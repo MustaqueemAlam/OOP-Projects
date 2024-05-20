@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.MainDashboardController">
+    <Button layoutX="50.0" layoutY="50.0" onAction="#switchToAddFacultyScene" prefHeight="25.0" prefWidth="120.0" text="Add Faculty" />
+    <Button layoutX="200.0" layoutY="50.0" onAction="#switchToAddNewApprovedCourseScene" prefHeight="25.0" prefWidth="150.0" text="Add Approved Course" />
+    <Button layoutX="50.0" layoutY="100.0" onAction="#switchToCourseRegistrationScene" prefHeight="25.0" prefWidth="140.0" text="Course Registration" />
+    <Button layoutX="200.0" layoutY="100.0" onAction="#switchToOfferCourseForRegistrationScene" prefHeight="25.0" prefWidth="220.0" text="Offer Course for Registration" />
+    <Label fx:id="newUserIdOutputLabel" layoutX="50.0" layoutY="150.0" text="" />
+</AnchorPane>

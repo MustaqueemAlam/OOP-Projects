@@ -1,0 +1,9 @@
+Invoice generated on: 2023-09-19 04:07:58
+
+Bill Summary
+
+Nescafe Gold 500gm jar (Quantity: 2)
+Unit Price: 350.0
+Gross Total: 721.0
+
+Total Payable: 721.0 BDT

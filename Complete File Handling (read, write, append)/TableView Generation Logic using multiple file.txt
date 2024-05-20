@@ -1,0 +1,67 @@
+TableView Generation Logic using multiple file:
+====================================================
+
+-----------------------------------
+Student.bin
+111,Asif,3.56,CSE,4161
+222,Luna,3.47,CSE,4234
+333,Shafiq,3.78,CSE,4161
+....
+-----------------------------------
+
+-----------------------------------
+Faculty.bin
+4161,SKD,desig1,CSE,....
+4234,MH,desig2,CSE,....
+.....
+-----------------------------------
+
+DUMMY CLASS FOR TABLE VIEW ROW:
+
+public class OutputTableViewRowClass {
+	private int id, private String studName, advisorName;
+	//constructors, getters, setters
+}
+
+outputTableView
+
+StudentId	StudName	AdvisorName
+111		Asif		SKD
+222		Luna		MH
+333		Shafiq		SKD
+
+
+
+controllerClassHandlerMethod(....){
+
+ try{
+    try{
+	while(true){
+		facultyObj = (Faculty) ois2.readObject();
+		facultyList.add(facultyObj);
+	}
+    }
+    catch(...){...}
+    try{
+	int advId; String advName="";
+	while(true){
+		studObj = (Student) ois1.readObject();
+		advId = studObj.getAdvisorId();
+		for(Faculty flt : facultyList){
+			if(flt.getId()==advId)
+				advName = flt.getName();
+		}
+		outputTableView.getItems().add(
+			new OutputTableViewRowClass(
+				studObj.getId(),
+				studObj.getName(),
+				advName
+			)
+		);
+	}
+    }
+    catch(...){...}
+    ....
+ }
+ catch(..){...}
+}

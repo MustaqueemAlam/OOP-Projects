@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane2" prefHeight="250.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="callofduty2.PauseScController">
+   <children>
+      <ImageView fitHeight="231.0" fitWidth="476.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pauseSc.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="ResumeButton" layoutX="64.0" layoutY="67.0" mnemonicParsing="false" onAction="#ResumeButtonOnClick" prefHeight="34.0" prefWidth="115.0" text="Resume">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="RestartButton" layoutX="64.0" layoutY="101.0" mnemonicParsing="false" onAction="#RestartButtonOnClick" prefHeight="34.0" prefWidth="115.0" text="Restart Level">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="ExitButton2" layoutX="64.0" layoutY="135.0" mnemonicParsing="false" onAction="#Exit2ButtonOnClick" prefHeight="34.0" prefWidth="115.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

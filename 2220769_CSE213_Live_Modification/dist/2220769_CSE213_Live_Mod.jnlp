@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="2220769_CSE213_Live_Mod.jnlp">
+  <information>
+    <title>2220769_CSE213_Live_Mod</title>
+    <vendor>cis101</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="2220769_CSE213_Live_Mod.jar" size="15353" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainPkg.Main"  name="2220769_CSE213_Live_Mod" />
+  <update check="always"/>
+</jnlp>

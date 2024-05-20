@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="340.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.AddFacultyController">
+    <children>
+        <Label layoutX="170" layoutY="20" text="Add Faculty" />
+        <Label layoutX="20" layoutY="60" text="Faculty ID:" />
+        <TextField fx:id="facultyIdTextField" layoutX="150" layoutY="55" />
+        <Label layoutX="20" layoutY="100" text="Name:" />
+        <TextField fx:id="nameTextField" layoutX="150" layoutY="95" />
+        <Label layoutX="20" layoutY="140" text="Designation:" />
+        <TextField fx:id="designationTextField" layoutX="150" layoutY="135" />
+        <Label layoutX="20" layoutY="180" text="Department:" />
+        <TextField fx:id="deptTextField" layoutX="150" layoutY="175" />
+        <Label layoutX="20" layoutY="220" text="Salary:" />
+        <TextField fx:id="salaryTextField" layoutX="150" layoutY="215" />
+        <Label layoutX="20" layoutY="260" text="Date of Birth:" />
+        <TextField fx:id="dobTextField" layoutX="150" layoutY="255" />
+        <Button layoutX="150" layoutY="300" onAction="#addNewFaculty" text="Add Faculty" />
+    </children>
+</AnchorPane>

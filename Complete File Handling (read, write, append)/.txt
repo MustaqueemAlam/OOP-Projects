@@ -1,0 +1,2 @@
+1,A,Foreman,20000
+2,B,Manager,50000

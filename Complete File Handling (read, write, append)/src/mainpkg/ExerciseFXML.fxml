@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="561.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="mainpkg.ExerciseFXMLController">
+   <children>
+      <TextField layoutX="23.0" layoutY="23.0" text="Enter ID" />
+      <TextField layoutX="191.0" layoutY="23.0" prefHeight="25.0" prefWidth="285.0" text="Enter Name" />
+      <TextField layoutX="23.0" layoutY="58.0" text="Enter Cgpa" />
+      <Button layoutX="20.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="450.0" text="Append to &quot;Stud.bin&quot; binary file" />
+      <TextField layoutX="23.0" layoutY="139.0" prefHeight="25.0" prefWidth="450.0" text="Enter min CGPA requirement for scholarship" />
+      <Label layoutX="23.0" layoutY="245.0" prefHeight="32.0" prefWidth="470.0" text="Avg cgpa of students eligible for scholarship is: x.xx" textFill="#3d25da">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="450.0" text="Write scholarship eligible students to &quot;Scholarship.txt&quot; and show their avg cgpa" />
+   </children>
+</AnchorPane>

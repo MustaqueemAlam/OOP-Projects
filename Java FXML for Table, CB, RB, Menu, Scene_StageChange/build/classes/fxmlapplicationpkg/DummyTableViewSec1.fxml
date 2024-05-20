@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlapplicationpkg.DummyTableViewSec1Controller">
+   <children>
+      <ComboBox layoutX="353.0" layoutY="67.0" prefWidth="150.0" />
+      <DatePicker layoutX="341.0" layoutY="140.0" />
+      <TableView fx:id="studentTableView" layoutX="54.0" layoutY="186.0" prefHeight="200.0" prefWidth="468.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="nameTableColumn" prefWidth="224.0" text="name" />
+          <TableColumn fx:id="cgpaTableColumn" prefWidth="168.0" text="cgpa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

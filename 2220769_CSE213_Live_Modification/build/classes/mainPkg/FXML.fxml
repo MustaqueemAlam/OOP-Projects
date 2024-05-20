@@ -1,0 +1,75 @@
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="1227.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.TestScController">
+    <children>
+        <!-- Employee Information Section -->
+        <VBox layoutX="17.0" layoutY="30.0" prefHeight="77.0" prefWidth="208.0">
+            <!-- TextFields for Employee Information -->
+        </VBox>
+
+        <!-- Supplier Information Section -->
+        <TextArea fx:id="AdressTextArea" layoutX="258.0" layoutY="31.0" prefHeight="98.0" prefWidth="208.0" promptText="Address" style="-fx-background-color: red;" />
+
+        <!-- Filtering Options Section -->
+        <HBox layoutX="14.0" layoutY="220.0" prefHeight="30.0" prefWidth="705.0">
+            <!-- RadioButtons and Button for Filtering -->
+        </HBox>
+
+        <!-- TableView for Displaying Data -->
+        <TableView fx:id="tableview" layoutX="14.0" layoutY="255.0" prefHeight="199.0" prefWidth="537.0">
+            <!-- TableColumns for TableView -->
+        </TableView>
+
+        <!-- BarChart for Data Representation -->
+        <BarChart fx:id="barChart" layoutX="735.0" layoutY="208.0" prefHeight="199.0" prefWidth="223.0" style="-fx-background-color: yellow;">
+            <!-- Axes for BarChart -->
+        </BarChart>
+
+        <!-- ComboBox for Country Selection -->
+        <ComboBox fx:id="countryComboBox" layoutX="17.0" layoutY="107.0" prefHeight="25.0" prefWidth="208.0" promptText="Country" style="-fx-background-color: aqua;" />
+
+        <!-- PieChart for Data Representation -->
+        <PieChart fx:id="pieChart" layoutX="972.0" layoutY="209.0" prefHeight="199.0" prefWidth="223.0" style="-fx-background-color: yellow;" title="Employee Ratio" />
+
+        <!-- Buttons for Report Generation -->
+        <Button layoutX="495.0" layoutY="138.0" mnemonicParsing="false" onAction="#reportGenerateOnClick" prefHeight="38.0" prefWidth="415.0" text="Save table data to report file" textFill="#ff1b1b" />
+        <Button layoutX="920.0" layoutY="138.0" mnemonicParsing="false" onAction="#readReportTExtArea" prefHeight="38.0" prefWidth="269.0" style="-fx-background-radius: 88;" text="Read report" textFill="#ff1b1b" />
+
+        <!-- TextArea for Report Display -->
+        <TextArea fx:id="readreportTextarea" layoutX="495.0" layoutY="35.0" prefHeight="98.0" prefWidth="696.0" promptText="Report" style="-fx-background-color: red;" />
+
+        <!-- Buttons for Chart Generation -->
+        <Button layoutX="972.0" layoutY="409.0" mnemonicParsing="false" onAction="#piChartOnClick" prefHeight="45.0" prefWidth="223.0" text="Generate Pie Chart" textFill="RED" />
+        <Button layoutX="727.0" layoutY="409.0" mnemonicParsing="false" onAction="#barchartOnClick" prefHeight="45.0" prefWidth="238.0" text="Generate Bar Chart" textFill="RED" />
+
+        <!-- Line for Separation -->
+        <Line endX="83.0" layoutX="575.0" layoutY="209.0" startX="-102.0" />
+        <Line endX="-89.0" endY="183.0" layoutX="574.0" layoutY="37.0" startX="-89.0" startY="1.0" />
+
+        <!-- Text for Additional Information -->
+        <Text fill="#220b0b" fontSmoothingType="LCD" layoutX="14.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtering of employee and supplier nationality from bin file: " underline="true" wrappingWidth="421.13671875">
+            <!-- Font Information -->
+        </Text>
+
+        <!-- Button for Formatting TableView Data -->
+        <Button layoutX="559.0" layoutY="365.0" mnemonicParsing="false" onAction="#formatTableViewDSataOnClick" prefHeight="77.0" prefWidth="159.0" style="-fx-background-radius: 66;" text="Format table view data" textFill="RED">
+            <!-- Font Information -->
+        </Button>
+
+        <!-- Text for Chart Information -->
+        <Text layoutX="734.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charts of employee ratio count:" wrappingWidth="461.13671875">
+            <!-- Font Information -->
+        </Text>
+
+        <!-- Text for Scene Context -->
+        <Text layoutX="162.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Context: An employee is adding suppliers to the company database" underline="true" wrappingWidth="497.13671875">
+            <!-- Font Information -->
+        </Text>
+
+        <!-- ComboBox for Employee Selection -->
+        <ComboBox fx:id="employeeComboBox" layoutX="18.0" layoutY="132.0" prefHeight="25.0" prefWidth="448.0" promptText="Added by" />
+
+        <!-- Button for Loading TableView Data -->
+        <Button layoutX="559.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadTableViewOnClick" prefHeight="140.0" prefWidth="159.0" style="-fx-background-radius: 66;" text="Load table view" textFill="RED">
+            <!-- Font Information -->
+        </Button>
+    </children>
+</AnchorPane>

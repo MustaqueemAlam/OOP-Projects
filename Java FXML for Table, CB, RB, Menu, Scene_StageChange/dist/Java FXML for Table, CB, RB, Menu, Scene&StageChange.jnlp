@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Java FXML for Table, CB, RB, Menu, Scene&StageChange.jnlp">
+  <information>
+    <title>Java FXML for Table, CB, RB, Menu, Scene&StageChange</title>
+    <vendor>Subrata Kumar Dey</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="fxmlapplicationpkg.JavaFXMLApplicationClass"  name="Java FXML for Table, CB, RB, Menu, Scene&StageChange" />
+  <update check="always"/>
+</jnlp>

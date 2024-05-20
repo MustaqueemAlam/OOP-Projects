@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="1227.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.TestScController">
+   <children>
+      <VBox layoutX="17.0" layoutY="30.0" prefHeight="77.0" prefWidth="208.0">
+         <children>
+            <TextField fx:id="supplierIDtextfeild" prefHeight="16.0" prefWidth="143.0" promptText="id" />
+            <TextField fx:id="supplierNameTextFeild" promptText="name" />
+            <DatePicker fx:id="dateOfEnlishmentDatePicker" prefHeight="25.0" prefWidth="255.0" promptText="Date of enlishment" style="-fx-background-color: red;" />
+         </children>
+      </VBox>
+      <TextArea fx:id="AdressTextArea" layoutX="258.0" layoutY="31.0" prefHeight="98.0" prefWidth="208.0" promptText="Adress" style="-fx-background-color: red;" />
+      <HBox layoutX="14.0" layoutY="220.0" prefHeight="30.0" prefWidth="705.0">
+         <children>
+            <RadioButton fx:id="AllRadioButton" mnemonicParsing="false" prefHeight="17.0" prefWidth="88.0" text="All" textFill="#366b40">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="BangladeshiRadioButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Bangladeshi" textFill="#366b40">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="NonBangladeshiRadioButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" text="Non Bangladeshi" textFill="#366b40">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <Button mnemonicParsing="false" onAction="#loaddAllDataFromBinFileOnClicks" prefHeight="30.0" prefWidth="148.0" style="-fx-background-radius: 77;" text="Load all data from bin file" textFill="#0033ff">
+               <font>
+                  <Font name="Nirmala UI Bold" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="255.0" prefHeight="199.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="39.0" style="-fx-background-color: aqua;" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="69.0" style="-fx-background-color: yellow;" text="Name" />
+            <TableColumn fx:id="nationalityCol" prefWidth="94.0" style="-fx-background-color: yellow;" text="Nationality" />
+            <TableColumn fx:id="employeeCol" prefWidth="139.0" text="Added by ( emp ids )" />
+            <TableColumn fx:id="dateOFEnCol" prefWidth="114.0" style="-fx-background-color: yellow;" text="Date of enlishment" />
+            <TableColumn fx:id="adressCol" prefWidth="81.0" text="Address" />
+        </columns>
+      </TableView>
+      <BarChart fx:id="barChart" layoutX="735.0" layoutY="208.0" prefHeight="199.0" prefWidth="223.0" style="-fx-background-color: yellow;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ComboBox fx:id="countryComboBox" layoutX="17.0" layoutY="107.0" prefHeight="25.0" prefWidth="208.0" promptText="country" style="-fx-background-color: aqua;" />
+      <PieChart fx:id="pieChart" layoutX="972.0" layoutY="209.0" prefHeight="199.0" prefWidth="223.0" style="-fx-background-color: yellow;" title="Emp ratio " />
+      <Button layoutX="495.0" layoutY="138.0" mnemonicParsing="false" onAction="#reportGenerateOnClick" prefHeight="38.0" prefWidth="415.0" text="Save table data to report file" textFill="#ff1b1b">
+         <font>
+            <Font name="Segoe UI Black Italic" size="16.0" />
+         </font></Button>
+      <Button layoutX="920.0" layoutY="138.0" mnemonicParsing="false" onAction="#readReportTExtArea" prefHeight="38.0" prefWidth="269.0" style="-fx-background-radius: 88;" text="Read report" textFill="#ff1b1b">
+         <font>
+            <Font name="Segoe UI Black Italic" size="17.0" />
+         </font></Button>
+      <TextArea fx:id="readreportTextarea" layoutX="495.0" layoutY="35.0" prefHeight="98.0" prefWidth="696.0" promptText="Report" style="-fx-background-color: red;" />
+      <Button layoutX="972.0" layoutY="409.0" mnemonicParsing="false" onAction="#piChartOnClick" prefHeight="45.0" prefWidth="223.0" text="Generate PiChart" textFill="RED">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="22.0" />
+         </font></Button>
+      <Button layoutX="727.0" layoutY="409.0" mnemonicParsing="false" onAction="#barchartOnClick" prefHeight="45.0" prefWidth="238.0" text="Generate BarChart" textFill="RED">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="22.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="165.0" mnemonicParsing="false" onAction="#AddToTableView" prefHeight="25.0" prefWidth="397.0" style="-fx-background-radius: 88;" text="Add to table view" textFill="#47a436">
+         <font>
+            <Font name="Sitka Small Bold" size="17.0" />
+         </font>
+      </Button>
+      <Line endX="83.0" layoutX="575.0" layoutY="209.0" startX="-102.0" />
+      <Line endX="-89.0" endY="183.0" layoutX="574.0" layoutY="37.0" startX="-89.0" startY="1.0" />
+      <Text fill="#220b0b" fontSmoothingType="LCD" layoutX="14.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtering of employee and supplier nationality from bin file: " underline="true" wrappingWidth="421.13671875">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="559.0" layoutY="365.0" mnemonicParsing="false" onAction="#formatTableViewDSataOnClick" prefHeight="77.0" prefWidth="159.0" style="-fx-background-radius: 66;" text="Format tableview data" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="734.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charts of emp ratio count:" wrappingWidth="461.13671875">
+         <font>
+            <Font name="Sitka Text Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Context: An employee is adding suppliers to the company database" underline="true" wrappingWidth="497.13671875">
+         <font>
+            <Font name="Sitka Banner Bold" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="employeeComboBox" layoutX="18.0" layoutY="132.0" prefHeight="25.0" prefWidth="448.0" promptText="Added by" />
+      <Button layoutX="559.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadTableViewOnClick" prefHeight="140.0" prefWidth="159.0" style="-fx-background-radius: 66;" text="Load table view" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
