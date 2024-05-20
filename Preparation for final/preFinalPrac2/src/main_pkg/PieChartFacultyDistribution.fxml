@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.PieChartFacultyDistributionController">
+    <ComboBox fx:id="departmentComboBox" layoutX="25.0" layoutY="18.0" prefWidth="150.0" promptText="Department" />
+    <ComboBox fx:id="designationComboBox" layoutX="183.0" layoutY="18.0" prefWidth="150.0" promptText="Designation" />
+    <Button layoutX="409.0" layoutY="15.0" onAction="#generateReportOnClick" prefHeight="32.0" prefWidth="164.0" style="-fx-background-radius: 88;" text="Generate Report" />
+    
+    <TableView fx:id="tableView" layoutX="23.0" layoutY="56.0" prefHeight="61.0" prefWidth="546.0">
+        <columns>
+            <TableColumn fx:id="DepartmentColumn" prefWidth="210.0" text="Department" />
+            <TableColumn fx:id="DesignationColumn" prefWidth="182.0" text="Designation" />
+            <TableColumn fx:id="FacultyCountCol" prefWidth="153.0" text="Faculty Count" />
+        </columns>
+    </TableView>
+    
+    <PieChart fx:id="pieChart" layoutX="23.0" layoutY="127.0" prefHeight="260.0" prefWidth="546.0" title="Piechart" />
+</AnchorPane>

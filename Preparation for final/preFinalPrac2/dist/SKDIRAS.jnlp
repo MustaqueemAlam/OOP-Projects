@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SKDIRAS.jnlp">
+  <information>
+    <title>SKDIRAS</title>
+    <vendor>cis101</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SKDIRAS.jar" size="30779" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="main_pkg.main"  name="SKDIRAS" />
+  <update check="always"/>
+</jnlp>

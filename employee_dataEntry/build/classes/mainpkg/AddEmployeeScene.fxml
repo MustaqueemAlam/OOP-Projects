@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="672.0" style="-fx-background-color: #00ffD0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AddEmployeeSceneController">
+   <children>
+      <TextField fx:id="idTextField" layoutX="72.0" layoutY="15.0" prefHeight="25.0" prefWidth="141.0" />
+      <TextField fx:id="nameTextField" layoutX="72.0" layoutY="51.0" prefHeight="25.0" prefWidth="141.0" />
+      <TextField fx:id="salaryTextField" layoutX="72.0" layoutY="88.0" prefHeight="25.0" prefWidth="141.0" />
+      <TextField fx:id="lSalBoundTextField" layoutX="183.0" layoutY="386.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField fx:id="uSalBoundTextField" layoutX="183.0" layoutY="427.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="15.0" layoutY="19.0" text="ID?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="55.0" text="Name?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="92.0" text="Salary?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="130.0" text="Gender?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="240.0" layoutY="55.0" text="Department?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="240.0" layoutY="91.0" text="Date of birth?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="240.0" layoutY="130.0" text="Date of joining?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="350.0" text="Select Search Department:">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label fx:id="infoLabel" layoutX="169.0" layoutY="164.0" prefHeight="17.0" prefWidth="485.0" textFill="RED" />
+      <Label layoutX="240.0" layoutY="19.0" text="Designation?">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="431.0" text="Enter Upper Salary Bound:">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="390.0" text="Enter Lower Salary Bound:">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+      <Button layoutX="15.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#showAvgSalaryButtonOnClick" prefHeight="39.0" prefWidth="307.0" style="-fx-background-radius: 99;" text="Show Avg. Salary" textFill="#ff0707">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
+         </font></Button>
+      <ComboBox fx:id="designationComboBox" layoutX="334.0" layoutY="15.0" prefHeight="25.0" prefWidth="138.0" />
+      <ComboBox fx:id="departmentComboBox" layoutX="334.0" layoutY="51.0" prefHeight="25.0" prefWidth="138.0" />
+      <DatePicker fx:id="dateOfBirthDatePicker" layoutX="334.0" layoutY="88.0" prefHeight="25.0" prefWidth="138.0" />
+      <DatePicker fx:id="dateOfJoiningDatePicker" layoutX="334.0" layoutY="126.0" prefHeight="25.0" prefWidth="138.0" />
+      <RadioButton fx:id="maleRadioButton" layoutX="72.0" layoutY="130.0" mnemonicParsing="false" onAction="#maleRadioButtonOnAction" text="Male">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="femaleRadioButton" layoutX="124.0" layoutY="130.0" mnemonicParsing="false" onAction="#femaleRadioButtonOnAction" text="Female">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></RadioButton>
+      <Button layoutX="500.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#addEmployeeButtonOnClick" prefHeight="121.0" prefWidth="138.0" style="-fx-background-radius: 77;" text="Add Employee" textFill="RED">
+         <font>
+            <Font name="Lucida Console" size="16.0" />
+         </font></Button>
+      <ComboBox fx:id="searchDepartmentComboBox" layoutX="183.0" layoutY="346.0" prefHeight="25.0" prefWidth="138.0" />
+      <Line endX="541.0" layoutX="116.0" layoutY="329.0" startX="-100.0" stroke="#5e5c5c" strokeWidth="2.0" />
+      <Line endX="-28.0" endY="118.0" layoutX="376.0" layoutY="375.0" startX="-28.0" startY="-20.0" />
+      <TextArea fx:id="outputTextArea1" layoutX="14.0" layoutY="196.0" prefHeight="121.0" prefWidth="645.0" />
+      <TextArea fx:id="outputTextArea2" layoutX="374.0" layoutY="358.0" prefHeight="133.0" prefWidth="285.0" wrapText="true" />
+
+
+      <Label layoutX="23.0" layoutY="164.0" prefHeight="17.0" prefWidth="149.0" text="Data Entry ArrayList: ">
+         <font>
+            <Font name="Lucida Sans Demibold" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
