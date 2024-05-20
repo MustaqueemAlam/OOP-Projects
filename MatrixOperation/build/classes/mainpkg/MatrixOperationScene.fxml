@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.MatrixOperationSceneController">
+   <children>
+      <Label alignment="CENTER" prefHeight="35.0" prefWidth="690.0" text="Matrix Operations" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="62.0" prefHeight="25.0" prefWidth="192.0" text="Select no. of rows of Matrix-1: ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="mat1RowComboBox" layoutX="216.0" layoutY="62.0" prefHeight="25.0" prefWidth="56.0" />
+      <Label layoutX="27.0" layoutY="110.0" prefHeight="25.0" prefWidth="192.0" text="Select no. of cols of Matrix-1: ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="mat1ColComboBox" layoutX="216.0" layoutY="110.0" prefHeight="25.0" prefWidth="56.0" />
+      <Label fx:id="outputLabel" alignment="CENTER" layoutY="356.0" prefHeight="314.0" prefWidth="690.0" style="-fx-background-color: #D3D3D3;" text="Output">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="operationComboBox" layoutX="500.0" layoutY="94.0" onAction="#operationComboBoxOnSelect" prefHeight="25.0" prefWidth="164.0" promptText="Choose Operation" />
+      <TextField fx:id="mat2RowTextField" alignment="CENTER" layoutX="292.0" layoutY="62.0" prefHeight="25.0" prefWidth="164.0" promptText="Enter no. of rows of Matrix-2" />
+      <TextField fx:id="mat2ColTextField" alignment="CENTER" layoutX="292.0" layoutY="110.0" prefHeight="25.0" prefWidth="164.0" promptText="Enter no. of cols of Matrix-2" />
+      <Line endX="100.0" endY="59.0" layoutX="379.0" layoutY="218.0" startX="100.0" startY="-150.0" />
+      <Label fx:id="elemMat1Label" layoutX="26.0" layoutY="228.0" text="Enter [0][0] element of Matrix-1:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="elemMat2Label" layoutX="26.0" layoutY="263.0" text="Enter [0][0] element of Matrix-2:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="elemMat1TextField" layoutX="234.0" layoutY="225.0" prefHeight="25.0" prefWidth="56.0" />
+      <TextField fx:id="elemMat2TextField" layoutX="234.0" layoutY="260.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="addElemM1Button" layoutX="304.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#addMat1ElemButtonOnClick" prefHeight="25.0" prefWidth="152.0" text="Add Element" />
+      <Button fx:id="addElemM2Button" layoutX="304.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#addMat2ElemButtonOnClick" prefHeight="25.0" prefWidth="152.0" text="Add Element" />
+      <Button layoutX="25.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#executeButtonOnClick" prefHeight="35.0" prefWidth="638.0" text="Execute!">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="mat1RadioButton" layoutX="500.0" layoutY="136.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="132.0" text="Select Matrix-1 for Transpose/Inverse" wrapText="true" />
+      <RadioButton fx:id="mat2RadioButton" layoutX="500.0" layoutY="179.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="132.0" text="Select Matrix-2 for Transpose/Inverse" wrapText="true" />
+      <RadioButton fx:id="bothMatRadioButton" layoutX="500.0" layoutY="222.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="144.0" text="Select both Matrices for Transpose/Inverse" wrapText="true" />
+      <Button layoutX="24.0" layoutY="155.0" mnemonicParsing="false" onAction="#createMatrixButtonOnClick" prefHeight="35.0" prefWidth="432.0" text="Create new Matrix-1 and Matrix-2" />
+      <Line endX="315.0" endY="-68.0" layoutX="133.0" layoutY="276.0" startX="-100.0" startY="-68.0" />
+   </children>
+</AnchorPane>
